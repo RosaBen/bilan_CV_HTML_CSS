@@ -22,13 +22,43 @@
   font-display: swap;
 }
 
+/* layouts */
+
 body {
-  width: 100%;
-  max-width: 1000px;
-  margin: 3rem auto;
+  background-color: #f5f5f5;
 }
 
-h1 {
+.container {
+  width: 100%;
+  max-width: 1160px;
+  margin: 3rem auto;
+  background-color: #ffffff;
+}
+
+header {
+  background-color: #17abb3;
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header-img img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+
+/* Typos */
+
+h1,
+header h2,
+a,
+header p {
+  color: #ffffff;
+}
+
+/* h1 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
 }
@@ -45,4 +75,4 @@ h3 {
   font-size: 2rem;
   font-style: normal;
   font-weight: 400;
-}
+} */
