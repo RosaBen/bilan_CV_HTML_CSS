@@ -49,10 +49,23 @@ header {
   border-radius: 50%;
 }
 
+.header-infos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .infos-name-title {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.infos-contact div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 /* Typos */
@@ -78,6 +91,10 @@ h2 {
 
 h1 {
   font-size: 3.5rem;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* 
