@@ -22,7 +22,7 @@
   font-display: swap;
 }
 
-/* layouts */
+/* main-layouts */
 
 body {
   background-color: #f5f5f5;
@@ -35,6 +35,12 @@ body {
   background-color: #ffffff;
 }
 
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+/* Header-layouts */
 header {
   background-color: #17abb3;
   display: flex;
@@ -68,7 +74,14 @@ header {
   margin-bottom: 0.5rem;
 }
 
-/* Typos */
+/* left-column-layouts */
+
+.left-column {
+  background-color: #e3e3e3;
+  padding: 3rem 2rem;
+}
+
+/* header-Typos */
 
 h1,
 header h2,
@@ -95,6 +108,17 @@ h1 {
 
 a {
   text-decoration: none;
+}
+
+/* main-typos */
+
+main h3 {
+  color: #17abb3;
+  font-size: 1.5rem;
+}
+
+main p {
+  color: #333333;
 }
 
 /* 
