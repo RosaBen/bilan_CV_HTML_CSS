@@ -81,17 +81,21 @@ header {
   padding: 3rem 2rem;
 }
 
+.left-column section {
+  margin-bottom: 3rem;
+}
+
 .tech-skills {
   margin-bottom: 2rem;
 }
 
-.tech-skills div {
+.left-column section div {
   border-top: 1px solid #e3e3e3;
   margin-top: 0.5rem;
   padding-top: 1rem;
 }
 
-.tech-skills ul {
+.left-column section ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -138,7 +142,8 @@ main li {
   font-size: 0.875rem;
 }
 
-.tech-skills li {
+.tech-skills li,
+.languages li {
   list-style: none;
 }
 
@@ -147,13 +152,15 @@ main li {
   font-size: 0.8rem;
 }
 
-.tech-skills ul li:nth-child(1) {
+.tech-skills ul li:nth-child(1),
+.languages ul li:nth-child(1) {
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 2;
 }
 
-.tech-skills ul li:nth-child(2) {
+.tech-skills ul li:nth-child(2),
+.languages ul li:nth-child(2) {
   justify-self: end;
 }
 
