@@ -108,6 +108,17 @@ header {
   padding-left: 1.2rem;
 }
 
+/* right-column-layouts */
+
+.right-column {
+  padding: 3rem;
+}
+
+.right-column section div {
+  border-top: 1px solid #e3e3e3;
+  margin-top: 0.5rem;
+  padding-top: 1rem;
+}
 /* header-Typos */
 
 h1,
@@ -148,8 +159,11 @@ main p,
 main li {
   color: #333333;
   font-size: 0.875rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
 }
 
+/* left-columns typos */
 .tech-skills li,
 .languages li {
   list-style: none;
@@ -181,6 +195,13 @@ main li {
 .soft-skills li::marker,
 .hobbies li::marker {
   color: #17abb3;
+}
+
+/* right-columns typo */
+
+.profile p {
+  text-indent: 2rem;
+  line-height: 1.4;
 }
 
 /* 
