@@ -89,15 +89,22 @@ header {
   margin-bottom: 2rem;
 }
 
-.left-column section div {
+.left-column section div,
+.soft-skills ul {
   border-top: 1px solid #e3e3e3;
   margin-top: 0.5rem;
   padding-top: 1rem;
 }
 
-.left-column section ul {
+.tech-skills ul,
+.languages ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.soft-skills ul {
+  padding-left: 1.2rem;
+  margin-top: 1rem;
 }
 
 /* header-Typos */
@@ -162,6 +169,15 @@ main li {
 .tech-skills ul li:nth-child(2),
 .languages ul li:nth-child(2) {
   justify-self: end;
+}
+
+.soft-skills li {
+  font-size: 1.2rem;
+  list-style: square;
+}
+
+.soft-skills li::marker {
+  color: #17abb3;
 }
 
 /* 
