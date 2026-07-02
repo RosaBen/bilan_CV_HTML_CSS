@@ -78,7 +78,7 @@ header {
 
 .left-column {
   background-color: #eef0f2;
-  padding: 3rem 2rem;
+  padding: 3rem;
 }
 
 .left-column section {
@@ -90,7 +90,8 @@ header {
 }
 
 .left-column section div,
-.soft-skills ul {
+.soft-skills ul,
+.hobbies ul {
   border-top: 1px solid #e3e3e3;
   margin-top: 0.5rem;
   padding-top: 1rem;
@@ -102,9 +103,9 @@ header {
   grid-template-columns: 1fr 1fr;
 }
 
-.soft-skills ul {
+.soft-skills ul,
+.hobbies ul {
   padding-left: 1.2rem;
-  margin-top: 1rem;
 }
 
 /* header-Typos */
@@ -171,12 +172,14 @@ main li {
   justify-self: end;
 }
 
-.soft-skills li {
+.soft-skills li,
+.hobbies li {
   font-size: 1.2rem;
   list-style: square;
 }
 
-.soft-skills li::marker {
+.soft-skills li::marker,
+.hobbies li::marker {
   color: #17abb3;
 }
 
