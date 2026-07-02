@@ -119,24 +119,28 @@ header {
 }
 
 .profile div,
-.education ul {
+.education ul,
+.internship ul {
   border-top: 1px solid #e3e3e3;
   margin-top: 0.5rem;
   padding-top: 1rem;
 }
 
-.education li {
+.education li,
+.internship li {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 1.5rem;
 }
 
-.education li p:nth-child(1) {
+.education li p:nth-child(1),
+.internship li p:nth-child(1) {
   display: flex;
   flex-direction: column;
 }
 
-.education p:nth-child(2) {
+.education p:nth-child(2),
+.internship li p:nth-child(2) {
   justify-self: end;
 }
 /* header-Typos */
@@ -228,22 +232,26 @@ main li {
   line-height: 1.4;
 }
 
-.education li {
+.education li,
+.internship li {
   list-style: none;
   font-family: "Raleway", sans-serif;
 }
 
-.education li p:nth-child(1) {
+.education li p:nth-child(1),
+.internship li p:nth-child(1) {
   font-weight: 600;
 }
 
-.education li p:nth-child(1) span {
+.education li p:nth-child(1) span,
+.internship li p:nth-child(1) span {
   font-weight: 400;
   font-style: italic;
   font-size: 0.7rem;
 }
 
-.education p:nth-child(2) {
+.education p:nth-child(2),
+.internship li p:nth-child(2) {
   color: #17abb3;
   font-weight: 600;
 }
