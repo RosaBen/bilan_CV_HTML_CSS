@@ -77,8 +77,23 @@ header {
 /* left-column-layouts */
 
 .left-column {
-  background-color: #e3e3e3;
+  background-color: #eef0f2;
   padding: 3rem 2rem;
+}
+
+.tech-skills {
+  margin-bottom: 2rem;
+}
+
+.tech-skills div {
+  border-top: 1px solid #e3e3e3;
+  margin-top: 0.5rem;
+  padding-top: 1rem;
+}
+
+.tech-skills ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 /* header-Typos */
@@ -117,8 +132,29 @@ main h3 {
   font-size: 1.5rem;
 }
 
-main p {
+main p,
+main li {
   color: #333333;
+  font-size: 0.875rem;
+}
+
+.tech-skills li {
+  list-style: none;
+}
+
+.fa-star {
+  color: #17abb3;
+  font-size: 0.8rem;
+}
+
+.tech-skills ul li:nth-child(1) {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  line-height: 2;
+}
+
+.tech-skills ul li:nth-child(2) {
+  justify-self: end;
 }
 
 /* 
