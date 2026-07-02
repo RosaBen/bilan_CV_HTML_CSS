@@ -147,6 +147,38 @@ header {
 .experience li p:nth-child(2) {
   justify-self: end;
 }
+
+/* Footer */
+
+footer {
+  text-align: center;
+  background-color: #17abb3;
+  padding: 1.5rem;
+}
+
+footer div {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.fa-brands {
+  font-size: 2rem;
+}
+
+footer p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 0.7rem;
+}
+
+.fa-brands,
+footer p {
+  color: #ffffff;
+}
 /* header-Typos */
 
 h1,
@@ -176,6 +208,7 @@ h1 {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 /* main-typos */
