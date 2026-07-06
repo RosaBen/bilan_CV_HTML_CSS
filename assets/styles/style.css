@@ -22,16 +22,282 @@
   font-display: swap;
 }
 
+/* main-layouts */
+
 body {
+  background-color: #f5f5f5;
+}
+
+.container {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1160px;
   margin: 3rem auto;
+  background-color: #ffffff;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+/* Header-layouts */
+header {
+  background-color: #17abb3;
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header-img img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+
+.header-infos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.infos-name-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.infos-contact div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* left-column-layouts */
+
+.left-column {
+  background-color: #eef0f2;
+  padding: 3rem;
+}
+
+.left-column section {
+  margin-bottom: 3rem;
+}
+
+.tech-skills {
+  margin-bottom: 2rem;
+}
+
+.left-column section div,
+.soft-skills ul,
+.hobbies ul {
+  border-top: 1px solid #e3e3e3;
+  margin-top: 0.5rem;
+  padding-top: 1rem;
+}
+
+.tech-skills ul,
+.languages ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.soft-skills ul,
+.hobbies ul {
+  padding-left: 1.2rem;
+}
+
+/* right-column-layouts */
+
+.right-column {
+  padding: 3rem;
+}
+
+.right-column section {
+  margin-bottom: 2rem;
+}
+
+.profile div,
+.education ul,
+.internship ul,
+.experience ul {
+  border-top: 1px solid #e3e3e3;
+  margin-top: 0.5rem;
+  padding-top: 1rem;
+}
+
+.education li,
+.internship li,
+.experience li {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 1.5rem;
+}
+
+.education li p:nth-child(1),
+.internship li p:nth-child(1),
+.experience li p:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+}
+
+.education p:nth-child(2),
+.internship li p:nth-child(2),
+.experience li p:nth-child(2) {
+  justify-self: end;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  background-color: #17abb3;
+  padding: 1.5rem;
+}
+
+footer div {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.fa-brands {
+  font-size: 2rem;
+}
+
+footer p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 0.7rem;
+}
+
+.fa-brands,
+footer p {
+  color: #ffffff;
+}
+/* header-Typos */
+
+h1,
+header h2,
+a,
+header p {
+  color: #ffffff;
+}
+
+header a,
+header p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
 }
 
 h1 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
+  font-size: 3.5rem;
 }
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* main-typos */
+
+main h3 {
+  color: #17abb3;
+  font-size: 1.5rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+}
+
+main p,
+main li {
+  color: #333333;
+  font-size: 0.875rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+/* left-columns typos */
+.tech-skills li,
+.languages li {
+  list-style: none;
+}
+
+.fa-star {
+  color: #17abb3;
+  font-size: 0.8rem;
+}
+
+.tech-skills ul li:nth-child(1),
+.languages ul li:nth-child(1) {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  line-height: 2;
+}
+
+.tech-skills ul li:nth-child(2),
+.languages ul li:nth-child(2) {
+  justify-self: end;
+}
+
+.soft-skills li,
+.hobbies li {
+  font-size: 1.2rem;
+  list-style: square;
+}
+
+.soft-skills li::marker,
+.hobbies li::marker {
+  color: #17abb3;
+}
+
+/* right-columns typo */
+
+.profile p {
+  text-indent: 2rem;
+  line-height: 1.4;
+}
+
+.education li,
+.internship li,
+.experience li {
+  list-style: none;
+  font-family: "Raleway", sans-serif;
+}
+
+.education li p:nth-child(1),
+.internship li p:nth-child(1),
+.experience li p:nth-child(1) {
+  font-weight: 600;
+}
+
+.education li p:nth-child(1) span,
+.internship li p:nth-child(1) span,
+.experience li p:nth-child(1) span {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 0.7rem;
+}
+
+.education p:nth-child(2),
+.internship li p:nth-child(2),
+.experience li p:nth-child(2) {
+  color: #17abb3;
+  font-weight: 600;
+}
+
+/* 
 
 h2 {
   font-family: "Raleway", sans-serif;
@@ -45,4 +311,4 @@ h3 {
   font-size: 2rem;
   font-style: normal;
   font-weight: 400;
-}
+} */
